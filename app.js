@@ -8,7 +8,7 @@ console.log("WEBAPP URL:", GOOGLE_SHEETS_WEBAPP_URL);
 const btnPlanning = document.getElementById("btnPlanning");
 const overlay = document.getElementById("planningOverlay");
 const closeBtn = document.getElementById("closePlanning");
-const WHATS_GROUP_URL = "https://chat.whatsapp.com/Hv1TJc6uhKDEDhWWL6Udrt";
+const WHATS_GROUP_URL = "https://chat.whatsapp.com/Dqa2YnPKNluIrI52hQZQTh";
 
 // 2) Invitados
 
