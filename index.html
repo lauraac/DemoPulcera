@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Quince Valeria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- WhatsApp / Facebook Preview -->
+  <meta property="og:title" content="💖 Quince Allison Zoe 💖" />
+  <meta property="og:description" content="Abre la galería y comparte tus recuerdos 📸✨" />
+  <meta property="og:image" content="https://lauraac.github.io/pulsera/img/qr.jpg" />
+  <meta property="og:url" content="https://lauraac.github.io/pulsera/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Opcional (mejor compatibilidad) -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter (también ayuda) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="💖 Quince Allison Zoe 💖" />
+  <meta name="twitter:description" content="Abre la galería y comparte tus recuerdos 📸✨" />
+  <meta name="twitter:image" content="https://lauraac.github.io/pulsera/img/preview.qr" />
+
+</head>
+
+<body>
+  <div class="sparkles-field" aria-hidden="true">
+    <span class="spark s1"></span>
+    <span class="spark s2"></span>
+    <span class="spark s3"></span>
+    <span class="spark s4"></span>
+    <span class="spark s5"></span>
+    <span class="spark s6"></span>
+  </div>
+
+
+  <main class="app">
+
+    <!-- HERO (imagen + texto) -->
+    <header class="hero">
+      <img class="hero-img" src="img/portada.png" alt="Quince Valeria" />
+      <div class="hero-fade"></div>
+
+      <div class="hero-content">
+        <div class="brand">Memories</div>
+        <h1 class="title">💖 Quince Allison Zoe 💖</h1>
+        <p class="subtitle">
+          <span>14 de febrero 2016</span>
+          <span class="dot">·</span>
+          <span id="liveTime">--:--</span>
+        </p>
+      </div>
+    </header>
+
+    <!-- ACCIONES (Subir / Chat / Planning / Invitados) -->
+    <section class="actions">
+      <button class="action" id="btnUpload" type="button">
+        <span class="ico">＋</span>
+        <span class="lbl">Subir</span>
+      </button>
+
+      <a class="action" id="btnChat" href="#" target="_blank" rel="noopener">
+        <span class="ico">💬</span>
+        <span class="lbl">Chat</span>
+      </a>
+
+      <button class="action" id="btnPlanning" type="button">
+        <span class="ico">🗒️</span>
+        <span class="lbl">Planning</span>
+      </button>
+
+      <button class="action" id="btnGuests" type="button">
+        <span class="ico">👥</span>
+        <span class="lbl" id="guestCount">72</span>
+      </button>
+    </section>
+
+    <!-- CARRUSEL -->
+    <!-- CARRUSEL (4 tarjetas con flip + auto scroll) -->
+    <section class="carouselWrap">
+      <div class="carousel" id="carousel">
+        <!-- Tarjeta 1 -->
+        <article class="flipCard" data-link="https://lauraac.github.io/lanaXV/">
+          <div class="flipInner">
+            <div class="flipFace flipFront" style="background-image:url('img/pagina.png')">
+              <div class="cardTitle">Visita invitación 💌</div>
+            </div>
+            <div class="flipFace flipBack">
+              <h3>Invitación</h3>
+              <p>Ver toda la invitación y detalles del evento.</p>
+              <button class="goBtn" type="button">Ir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="flipCard" data-link="https://maps.app.goo.gl/xiXES4xfQpf3x8uZ8">
+          <div class="flipInner">
+            <div class="flipFace flipFront" style="background-image:url('img/maps.jpg')">
+              <div class="cardTitle">Ubicación 📍</div>
+            </div>
+            <div class="flipFace flipBack">
+              <h3>Cómo llegar</h3>
+              <p>Abrir ubicación en Google Maps.</p>
+              <button class="goBtn" type="button">Ir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <!-- Tarjeta 3 · PLANNING -->
+        <article class="flipCard" id="planningCard" data-link="#planningSection">
+
+          <div class="flipInner">
+
+            <!-- FRENTE -->
+            <div class="flipFace flipFront" style="background-image:url('img/planning.png')">
+              <div class="cardTitle">Planning ✨</div>
+            </div>
+
+            <!-- ATRÁS (PLANNING) -->
+            <div class="flipFace flipBack planningBack">
+              <h3>Planning 🗓️</h3>
+
+              <ul class="planningList">
+                <li>🕗 <b>Entrada al salón</b> <span>8:00 PM</span></li>
+                <li>🎉 <b>Sorpresa</b> <span>9:00 PM</span></li>
+                <li>🎊 <b>Sorpresa</b> <span>10:30 PM</span></li>
+                <li>💃 <b>Vals familiar y sorpresa</b> <span>11:30 PM</span></li>
+                <li>🥁 <b>Batucada</b> <span>12:30 AM</span></li>
+              </ul>
+
+
+              <button class="goBtn" type="button">Cerrar</button>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Tarjeta 4 -->
+        <article class="flipCard"
+          data-link="https://drive.google.com/drive/folders/1GulwCWqg-gl1nVC7UccVN5AFoxnmWI0V?usp=sharing">
+
+          <div class="flipInner">
+            <div class="flipFace flipFront" style="background-image:url('img/galeria.png')">
+              <div class="cardTitle">Galería 📸</div>
+            </div>
+            <div class="flipFace flipBack">
+              <h3>Fotos</h3>
+              <p>“Abre la galería para ver todos los recuerdos.”</p>
+              <button class="goBtn" type="button">Ir</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <!-- INPUT FILE oculto para "Subir" -->
+    <input id="fileInput" type="file" accept="image/*" multiple hidden />
+
+  </main>
+  <div id="planningOverlay" class="planning-overlay hidden">
+    <div class="planning-zoom">
+      <h2>Planning 🗓️</h2>
+
+      <ul class="planningList">
+        <li>🕗 <b>Entrada al salón</b> <span>8:00 PM</span></li>
+        <li>🎉 <b>Sorpresa</b> <span>9:00 PM</span></li>
+        <li>🎊 <b>Sorpresa</b> <span>10:30 PM</span></li>
+        <li>💃 <b>Vals familiar</b> <span>11:30 PM</span></li>
+        <li>🥁 <b>Batucada</b> <span>12:30 AM</span></li>
+      </ul>
+
+      <button id="closePlanning" class="goBtn">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js?v=2"></script>
+</body>
+
+</html>
